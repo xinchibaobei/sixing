@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* Blood_Wolf专用样式表，支持开源，如有使用或二次开发，请标明出处，谢谢合作！ */
+/*#ff8a00;*/
+/* 起始样式 */
+body {font-family:"微软雅黑";  margin:0 auto; padding:0px; font-size:12px; height:100%; line-height:22px; width:100%; background:#edeae1}
+div{behavior: url(css/iepngfix.htc)}
+ul,ul li,ol li,tr td,dl dd,dd{ list-style-type:none; margin:0; padding:0; }
+p{ margin:0; padding:0}
+.clear{ clear:both; height:0px; line-height:0px; font-size:0px;}
+a{ text-decoration:none; cursor:pointer;}
+/*a:hover{ text-decoration:underline;}*/
+img{ vertical-align:middle;}
+.imgs{ vertical-align:top;}
+.lf{ float:left;}
+.rg{ float:right;}  
+img{border:none;}
+html{ overflow-x:hidden;} 
+div:hover,li:hover,tr:hover,a:hover{ -webkit-transition: none; -moz-transition: none; transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -moz-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -webkit-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -o-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear;}
+/* -webkit-transition: all .3s; -moz-transition: all .3s; transition: all .3s; 背景滚动*/
+/* 公用样式 */
+.head{ height:122px; position:relative; z-index:100000;}   /* 原来 height:285px; */
+.box{ max-width:1440px; min-width:1000px; margin:0 auto;}
+.box .logo{ height:120px; } 									/* 新增 */
+.box .logo img{ padding-top:18px; } 							/* 新增 */
+.top{padding-top:11px; height:34px; overflow:hidden;}
+.padlf{ padding-left:5%; }
+.padrg{ padding-right:5%}
+.bottom{ height:120px; background:#fff;}  				/* 原来 height:241px; */
+
+.logo{ width:32%}
+.headrg{ padding-left:8%; width:50%;}
+.div_top{ padding-top:34px; padding-left:10%; overflow:hidden; padding-bottom:27px;}
+.div_top .lf{ width:40%; padding-left:8%; border-left:2px solid #eeebe3; height:120px; color:#97837a}  /* 原来 height:132px; */
+.dh{ background:url(../images/1_03.jpg) repeat-x top left; clear:both;}
+
+.dh .activesss{ width:20%; float:left; position:relative;}   /* 原来六个时用16.6% */
+
+.dh .activesss a{ text-align:center; display:block; width:100%; float:left; color:#2e1718; font-size:14px; padding-top:2px; height:47px; line-height:45px;}
+.dh .activesss:hover{ background:url(../images/1_04.jpg) top left repeat-x; color:#97837a;}
+.dh .activesss:hover .a1{ color:#97837a}
+.dh .activesss1{ background:url(../images/1_04.jpg) top left repeat-x;}
+.dh .activesss1 .a1{ color:#97837a}
+.dh:hover .activesss1{ background:none; color:#2e1718;}
+.dh:hover .activesss1 .a1{ color:#2e1718;}
+.dh:hover .activesss1:hover{ background:url(../images/1_04.jpg) top left repeat-x;}
+.dh:hover .activesss1:hover .a1{ color:#97837a}
+
+.dh .activesss .div1{ display:none; position:absolute; top:40px; background:#fff; width:100%; left:0px; z-index:10000; padding-bottom:15px;}
+.dh .activesss .div1 a{ display:block; font-size:12px; line-height:22px; height:22px; margin-top:10px;}
+.dh .activesss .div1 a:hover{ color:#fff; background:#97837a;}
+
+.foot{ background:#fff; padding-bottom:40px; margin-top:55px;}
+.foot_top{ border-top:9px solid #97837a; height:100%; padding-top:40px;}
+.foot_top .lf{ width:25%;}
+.div_tittle{ color:#2e1718; font-size:14px;}
+.div_tittle a{ color:#2e1718;}
+.div_tittle a:hover{ color:#97837a}
+.div_search{ padding-left:15px; height:40px; line-height:40px; margin-top:15px; background:#edeae1;}
+.div_search:hover{ background:#97837a}
+.div_search .p1{ width:80%; float:left}
+.div_search .p1 .text{ width:100%; border:0px; background:none; height:40px; line-height:40px; color:#2e1718}
+.div_search .p2{ width:20%; float:left}
+.div_search .p2 a{ display:block; background:url(../images/1_15.png) no-repeat center center; height:40px;}
+.div_search:hover .p2 a{ background:url(../images/1_15a.png) no-repeat center center; height:40px;}
+.foot_top .div2{ padding-left:7%; width:18%;}
+.ul_index1{ margin-top:10px;}
+.ul_index1 li{ margin-bottom:5px;}
+.ul_index1 li a{ color:#2e1718;}
+.ul_index1 li a:hover{ color:#2e1718}
+.foot_top .div4 .p1{ margin-top:20px;}
+
+.foot_bottom{ border-top:1px solid #edeae1; margin-top:30px; padding-top:12px; color:#97837a}
+.foot_bottom a{ color:#97837a;}
+.foot_bottom a:hover{ color:#2e1718}
+/* 公用样式 End */
+
+/* Index */
+.banner { width:100%; height:100%; overflow:hidden; position:relative; z-index:10;}
+.banner .flexslider{ position:relative; height:100%; z-index:10;}
+.banner .slides { position:relative;z-index:1; height:100%; overflow:hidden;}
+.banner .slides li { height:auto;}
+.banner .slides li img{ width:100%; height:auto}
+.banner .flex-control-nav { position:absolute; bottom:25px; z-index:99; width:210px; margin-left:-155px; *margin-left:-105px; left:50%;}   
+.banner .flex-control-nav li { display:inline-block; float:left; width:32px; height:6px; margin:0 5px;}
+.banner .flex-control-nav li span { display:none;}
+.banner .flex-control-nav li a { float:left; width:32px; height:7px; cursor:pointer; background:#edeae1;}
+.banner .flex-control-nav li a.flex-active { background:#a10042;}
+.banner .flex-direction-nav{ display:none;}
+
+.ss{ background:#fff; text-align:center; padding-top:70px; padding-bottom:70px; line-height:38px; color:#97837a; font-size:24px;}
+.ss span{ color:#2e1718;}
+.dd{ margin-top:64px;}
+
+.dd .nTab .TabTitle{ width:565px; margin:0 auto;}
+.dd .nTab .TabTitle li{float: left; cursor: pointer; text-align:center; font-size:12px; font-family:"宋体"; width:109px; height:100px;}
+.dd .nTab .TabTitle li .div1{ background:url(../images/1_05.png) center center no-repeat; width:109px; height:91px;}
+.dd .nTab .TabTitle li .div2{ background:url(../images/1_06.png) center center no-repeat; width:109px; height:91px;}
+.dd .nTab .TabTitle li .div3{ background:url(../images/1_07.png) center center no-repeat; width:109px; height:91px;}
+.dd .nTab .TabTitle li .div4{ background:url(../images/1_08.png) center center no-repeat; width:109px; height:91px;}
+.dd .nTab .TabTitle li .div5{ background:url(../images/1_09.png) center center no-repeat; width:109px; height:91px;}
+.dd .nTab .TabTitle li:hover{ background:url(../images/1_10.png) center center no-repeat;}
+.dd .nTab .TabTitle .active{ background:url(../images/1_10.png) center center no-repeat; }
+.dd .nTab .TabTitle:hover .active{ background:none;}
+.dd .nTab .TabTitle:hover .active:hover{ background:url(../images/1_10.png) center center no-repeat;}
+.dd .nTab .TabContent{ clear:both; margin-top:64px;}
+.none {display:none;}
+
+
+.ul_index li{ width:23.5%; margin-right:2%; margin-bottom:2%; float:left; cursor:pointer;}
+.ul_index .li{ margin-right:0px;}
+.ul_index li a{ display:block; position:relative; cursor:pointer;}
+
+.ul_index li a .div2{ position:absolute; bottom:0px; right:0px; width:74px; text-align:center; color:#fff; height:31px; line-height:31px; z-index:10; background:url(../images/1_11.png) repeat;}
+
+
+
+.ul_index .ic_container{ position:absolute; top:0px; left:0px; background:url(../images/tj_01.png) repeat; z-index:1000; cursor:pointer;}
+.ul_index .overlay{ position:absolute; top:0px; bottom:0px; left:0px; right:0px; filter:alpha(opacity=60); opacity:0.6; cursor:pointer;} 
+.ul_index .ic_caption{ position:absolute; overflow:hidden; margin:0px; padding:0px; left:0px; right:0px; cursor:default; height:55%; text-align:center; color:#fff; font-size:24px; line-height:40px; cursor:pointer;}
+
+
+
+.ff{ padding-top:30px; height:240px; overflow:hidden;}   /* 原来 height:300px; */
+.ff1{ width:50%;}                                        /* 原来 width:47%; */
+.ff2{ width:39%; margin-left:2%; margin-right:2%;}
+.ff3{ width:24%}                                         /* 原来 width:24%; */
+.ff1 .div1{ color:#2e1718; font-size:16px;}              /* 新增 */
+.ff1 ul{ margin-top:15px;}            				     /* 新增 */
+.ff2 .div1{ color:#2e1718; font-size:16px;}
+.ff2 ul{ margin-top:15px;}
+.ff2 ul li{ border-bottom:1px solid #9c8980; margin-bottom:10px;}
+.ff2 ul li .p1{ margin-bottom:4px;}
+.ff2 ul li .p2{ height:44px; overflow:hidden;}
+.ff2 ul li a{ display:block;}
+.ff2 ul li a .p1,.ff2 ul li a .p2{ color:#97837a; -webkit-transition: none; -moz-transition: none; transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -moz-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -webkit-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -o-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear;}
+.ff2 ul li a:hover .p1,.ff2 ul li a:hover .p2{ color:#2e1718; -webkit-transition: none; -moz-transition: none; transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -moz-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -webkit-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -o-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear;}
+
+/* Index End */
+/* Main */
+.mad{ margin-top:50px;}
+.divbg{ background:#fff; padding:5%;}
+.table_fl{ margin-bottom:30px; padding-top:30px; *margin-top:30px;}
+.table_fl td{ text-align:center; height:40px; line-height:40px;}
+.table_fl td a{ color:#32151a;}
+.table_fl td .a1{ border-top:2px solid #2d1719; padding-top:10px; padding-left:6px; padding-right:5px;}
+.table_fl td a:hover{ color:#97837a;}
+.fenye{ text-align:center; padding-top:30px;}
+
+.div_pro_tittle{ color:#2e1518; font-size:20px; line-height:20px; margin-bottom:20px;}
+
+.div_pro{ background:#fff;}
+.div_pro .lf{ width:76%;}
+.div_pro .rg{ width:24%;}
+.div_pro .rg .div1{ background:#000; height:45px; line-height:45px; color:#fff; padding-left:10%; font-size:24px;}
+.div_pro .rg .div2{ padding-left:10%;}
+.div_pro .rg .div2 .p1{ color:#a5948d; border-bottom:1px solid #97837a; margin-top:4%; padding-bottom:3%;}
+.div_pro .rg .div2 .p2{ color:#4b3736; margin-top:4%; padding-bottom:3%;}
+.div_pro .rg .div2 .p3{ color:#a5948d; border-bottom:1px solid #97837a; padding-bottom:3%; height:66px; overflow:hidden;}
+.div_pro .rg .div2 .p4{ color:#4b3736; margin-top:4%; padding-bottom:3%;}
+.div_pro .rg .div2 .p5 a{ display:block; float:left; width:50px; height:50px; line-height:50px; text-align:center; color:#fff; margin-right:4px;}
+.div_pro .rg .div2 .p6 a{ display:block; border:1px solid #968a8a; width:86px; height:30px; padding-left:14px; line-height:30px; margin-top:6%; color:#665656}
+
+.div_pro1{ margin-top:40px; margin-bottom:40px;}
+.div_pro1 .div1{ width:76%;}
+.div_pro1 .div1 .lf{ width:65%;}
+.div_pro1 .div1 .lf{ background:#FFF; min-height:319px;}
+.div_pro1 .div1 .rg{ width:35%; padding-top:20px;}
+.div_pro1 .div1 .rg li{ color:#544240; padding-left:38px; height:39px; line-height:39px; cursor:pointer;}
+.div_pro1 .div1 .rg .active{ background:url(../images/2_02.jpg) no-repeat #fff;}
+.div_pro1 .div1 .p1{ padding:30px; color:#ae9d8d; line-height:35px;}
+.div_pro1 .div2{ width:22%;}
+.div_pro1 .div2 .p1{ background:#fff; min-height:319px;}
+.div_pro1 .div2 .p1{ text-align:center;}
+
+.div_abo{ color:#a2938c; text-align:center; line-height:40px; font-size:14px; }
+.div_abo span{ font-size:40px; display:block; margin-bottom:15px;}
+
+.biaoti{ font-size:30px; color:#97837a; text-align:center; margin-top:60px;}
+.biaoti1{ font-size:20px; color:#97837a; text-align:center; margin-top:20px;}
+.time{ color:#9e8a81; text-align:center; font-size:14px; margin-top:14px; margin-bottom:40px;}
+
+.txt{ color:#666666; line-height:40px; font-size:16px; border-bottom:2px solid #b1a29b; padding-bottom:40px;}
+.txt a{ color:#666666; }
+.txt2{ color:#666666; line-height:40px; font-size:16px; border-bottom:2px solid #b1a29b; padding-bottom:40px; text-align:center;}
+.txt2 a{ color:#666666; }
+/* 原来 color:#a2938c; font-size:14px; */
+
+.syy{ margin-top:40px;}
+.syy a{ display:block; color:#97837a;}
+.syy a:hover{ color:#2e1718}
+
+.div_cont_bg{ background:#97837a; padding-top:140px; padding-bottom:140px; text-align:center;}
+.div_cont_bg td{ padding-left:25px; padding-right:25px; color:#f6f7e9; font-size:18px; line-height:40px; text-align:left;}
+
+.div_conat{ color:#a2938c; text-align:center; line-height:35px; font-size:14px;}
+.div_conat span{ font-size:40px; display:block; margin-bottom:15px;}
+
+
+.div_conat1 .div1{ color:#97847d; font-size:16px; text-align:center; font-weight:bold;}
+.div_conat1 .div2{ margin-top:15px;}
+.div_conat1 .div2 .p1{ float:left; width:12.5%; text-align:center; color:#97837a; font-size:14px;}
+
+.div_conat1 table{ background:#e5e0de; margin-top:15px;}
+.div_conat1 table td{ background:#fff; width:12.5%; height:28px; line-height:28px; overflow:hidden; text-align:center;}
+
+.div_net_bg{ background:#97837a; text-align:center; padding-top:20px; padding-bottom:20px;}
+.div_net{ text-align:center; height:80px; line-height:80px; color:#2d171a; font-size:16px;}
+
+.div_net1 .div1{ background:url(../images/7_02.png) left 2px no-repeat; padding-left:15px; color:#96827b; font-size:14px; margin-bottom:10px;}
+.div_net1 .div1 span{ margin-right:20px; color:#b63464;}
+.div_net1 .div1 .span{ margin-left:10px; color:#2c1716}
+
+.padlfrg{ padding-left:15%; padding-right:15%;}
+.divbg1{ background:#fff; padding:5% 15%;}
+
+.ul_news{ margin-top:50px;}
+.ul_news li{ height:45px; line-height:45px; font-size:14px; border-bottom:1px dashed #d4d3ce; *margin-bottom:-4px;}
+.ul_news li a{ color:#97837a; display:block; padding-left:20px; padding-right:20px; background:url(../images/5_03.png) 7px center no-repeat; -webkit-transition: none; -moz-transition: none; transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -moz-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -webkit-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -o-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear;}
+.ul_news li a:hover{ background:url(../images/5_03a.png) 7px center no-repeat #97837a; color:#fff; -webkit-transition: none; -moz-transition: none; transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -moz-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -webkit-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear; -o-transition: color 0.3s linear, background-color 0.3s linear, background-image 0.3s linear;}
+/* Main End */
+
+
+/* 2e1718 */
+
+
